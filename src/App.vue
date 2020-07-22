@@ -1,19 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <el-date-picker
+      v-model="value1"
+      type="week"
+      format="yyyy 第 WW 周"
+      placeholder="选择周"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { DatePicker } from "element-ui";
 
 export default Vue.extend({
   name: 'App',
   components: {
-    HelloWorld
-  }
+    [DatePicker.name]: DatePicker
+  },
+  data() {
+    return {
+      value1: ''
+    }
+  },
 });
 </script>
 
