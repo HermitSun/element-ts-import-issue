@@ -11,7 +11,8 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { DatePicker } from "element-ui";
+import { DatePicker } from 'element-ui';
+// import 'element-ui/lib/theme-chalk/icon.css';
 
 export default Vue.extend({
   name: 'App',
